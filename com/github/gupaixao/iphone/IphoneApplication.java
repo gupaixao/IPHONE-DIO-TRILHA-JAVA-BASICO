@@ -1,8 +1,8 @@
 package com.github.gupaixao.iphone;
 
 import com.github.gupaixao.iphone.internet.Email;
-import com.github.gupaixao.iphone.internet.apps.Chrome;
 import com.github.gupaixao.iphone.internet.Navegador;
+import com.github.gupaixao.iphone.internet.apps.Chrome;
 import com.github.gupaixao.iphone.internet.apps.Instagram;
 import com.github.gupaixao.iphone.internet.apps.Safari;
 import com.github.gupaixao.iphone.ipad.ReprodutorMusical;
@@ -10,8 +10,6 @@ import com.github.gupaixao.iphone.ipad.apps.Itunes;
 import com.github.gupaixao.iphone.ipad.apps.Spotify;
 import com.github.gupaixao.iphone.telefone.Contato;
 import com.github.gupaixao.iphone.telefone.Telefone;
-
-import java.time.Instant;
 
 public class IphoneApplication {
     public static void main(String[] args) {
@@ -32,7 +30,7 @@ public class IphoneApplication {
             navegador.atualizarPagina();
         }
 
-        Email email = new Email("emailaleatorio@email.com");
+        Email email = new Email("qualqueremail@email.com");
         email.enviarEmail();
         email.excluirEmail();
 
@@ -58,10 +56,10 @@ public class IphoneApplication {
         telefone.atender();
         telefone.iniciarCorreioVoz();
 
-        Contato contato = new Contato("Joao", "Silva", telefone, email);
+        Contato contato = new Contato("Maria", "Silva", telefone, email);
         contato.criarContato();
 
-        Instagram instagram = new Instagram("Joao", "senha12345");
+        Instagram instagram = new Instagram("Maria", "senha123");
         instagram.tirarFoto();
         instagram.gravarVideo();
     }
